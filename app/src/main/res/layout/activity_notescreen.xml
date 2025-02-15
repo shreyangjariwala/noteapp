@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:hint="DESIGN PRINCIPLES"
+            android:background="@null" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/note_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun, 10:24 | 4096 characters"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="The beauty comes from connecting principles for high conversion rates with world-class desigh"
+            android:textStyle="bold"/>
+
+        <!-- Checklist -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <CheckBox
+                android:id="@+id/check_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Read the book"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/check_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Write out the main thoughts"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/check_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Try a few principles on practice"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/check_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refine the concepts"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/check_item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share with the world"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete note" />
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make a copy" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share" />
+
+            <Button
+                android:id="@+id/btn_labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Labels" />
+        </LinearLayout>
+
+</LinearLayout>
